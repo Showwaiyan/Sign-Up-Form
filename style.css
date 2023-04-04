@@ -1,0 +1,101 @@
+/* reset the style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set the variable */
+:root {
+    /* color */
+    --background-color: #F9F5E7;
+    --card-color: #EDDBC7;
+
+    /* font */
+    --main-font: 'Noto Sans', sans-serif;
+}
+
+/* layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+}
+
+.image__section .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* typograohy */
+html {
+    font-size: 16px;
+
+    font-family: var(--main-font);
+}
+
+
+/* style */
+body {
+    background-color: var(--background-color);
+}
+
+.wrapper {
+    width: 1200px;
+    height: 600px;
+
+    background-color: var(--card-color);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.image__section {
+    background: url("/images/jonathan-borba-21tOEaJPM_o-unsplash.jpg");
+    background-size: cover;
+
+    width: 40%;
+}
+.image__section .logo {
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(5px);
+    backdrop-filter: contrast(50%);
+}
+
+.image__section .logo img {
+    width: 200px;
+}
+
+
+.form__section {
+    padding: 2rem 0rem;
+
+    width: 60%;
+}
+.form__box {
+    background-color: #F8EDE3;
+
+    height: 300px;
+}
+.form__section > *:not(.form){
+    padding: 0 3.2rem;
+}
+.form > *:not(.create__account) {
+    padding: 0 3.2rem;
+}
