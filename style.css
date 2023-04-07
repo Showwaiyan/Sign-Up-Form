@@ -39,12 +39,53 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
+.form__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+fieldset.name, fieldset.connect, fieldset.password{
+    display: flex;
+    justify-content: space-between;
+
+    width: 85%;
+}
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
 
 /* typograohy */
 html {
     font-size: 16px;
 
     font-family: var(--main-font);
+}
+.form__section article {
+    color: #553939;
+}
+.form__section article h2:first-child {
+    margin-bottom: 0.5rem;
+}
+.form__section label {
+    color: #553939;
+}
+.form__section h4 {
+    color: #704F4F;
+}
+.form__section h4 a {
+    color: #472D2D;
+}
+
+.form__box h1 {
+    color: #472D2D;
+}
+
+.form__section button {
+    color: #EED6C4;
+
+    font-weight: 700;
 }
 
 
@@ -84,18 +125,52 @@ body {
 
 
 .form__section {
-    padding: 2rem 0rem;
+    padding: 1rem 0;
 
     width: 60%;
 }
+fieldset {
+    border-style: none;
+}
+.form__section > *:not(.form){
+    padding: 0 3.2rem;
+}
+
+.form__section input {
+    border-radius: 5px;
+
+    border: 1px solid black;
+}
+
+.form > *:not(.create__account) {
+    padding: 0 3.2rem;
+}
+
 .form__box {
     background-color: #F8EDE3;
 
     height: 300px;
 }
-.form__section > *:not(.form){
-    padding: 0 3.2rem;
+#form--box--style {
+    padding-right: 0px;
 }
-.form > *:not(.create__account) {
-    padding: 0 3.2rem;
+
+form button {
+    margin-left: 3.2rem;
+    margin-top: 1rem;
 }
+
+.form__section h4 {
+    margin-top: 1rem;
+}
+
+form button {
+    border-style: none;
+    border-radius: 10px;
+
+    background-color: #9E7676;
+
+    padding: 0.5rem;
+}
+
+/* form style */
