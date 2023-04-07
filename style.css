@@ -106,7 +106,7 @@ body {
 }
 
 .image__section {
-    background: url("/images/jonathan-borba-21tOEaJPM_o-unsplash.jpg");
+    background: url("images/jonathan-borba-21tOEaJPM_o-unsplash.jpg");
     background-size: cover;
 
     width: 40%;
@@ -193,6 +193,7 @@ div:has(> input[required]) label::after{
     font-weight: 300;
 }
 
+/* Responsive */
 @media only screen and (max-width:768px){
     main.wrapper {
         flex-direction: column;
